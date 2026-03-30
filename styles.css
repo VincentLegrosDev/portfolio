@@ -492,6 +492,21 @@ img, svg { display: block; }
   color: #fff;
 }
 
+.project-company {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--accent);
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.project-period {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
 .project-description {
   color: var(--text-muted);
   font-size: 0.93rem;
