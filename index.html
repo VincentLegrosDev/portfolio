@@ -16,12 +16,21 @@
     <div class="nav-container">
       <a href="#hero" class="nav-logo">VL</a>
       <ul class="nav-links">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Experience</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-i18n="nav.experience">Experience</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+        <li class="nav-lang-item">
+          <button
+            type="button"
+            class="lang-toggle"
+            id="lang-toggle"
+            aria-label="Switch language"
+            aria-pressed="false"
+          >FR</button>
+        </li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle navigation">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -30,21 +39,21 @@
   <!-- Hero -->
   <section id="hero">
     <div class="hero-content">
-      <p class="hero-greeting">Hi, I'm</p>
+      <p class="hero-greeting" data-i18n="hero.greeting">Hi, I'm</p>
       <h1 class="hero-name">Vincent Legros</h1>
-      <h2 class="hero-title">Full-Stack Software Engineer</h2>
-      <p class="hero-bio">
+      <h2 class="hero-title" data-i18n="hero.title">Full-Stack Software Engineer</h2>
+      <p class="hero-bio" data-i18n="hero.bio">
         Full-stack developer with 5+ years of experience building robust web applications.
         Bachelor in Computer Science from UQAM. Passionate about clean code, design patterns,
         and learning new technologies.
       </p>
       <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        <a href="#projects" class="btn btn-primary" data-i18n="hero.ctaWork">View My Work</a>
+        <a href="#contact" class="btn btn-outline" data-i18n="hero.ctaContact">Get In Touch</a>
       </div>
     </div>
     <div class="hero-scroll-hint">
-      <span>Scroll</span>
+      <span data-i18n="hero.scroll">Scroll</span>
       <div class="scroll-line"></div>
     </div>
   </section>
@@ -53,23 +62,23 @@
   <section id="about" class="section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">01. About</span>
-        <h2 class="section-title">A bit about me</h2>
+        <span class="section-label" data-i18n="about.label">01. About</span>
+        <h2 class="section-title" data-i18n="about.title">A bit about me</h2>
       </div>
       <div class="about-grid">
         <div class="about-text reveal">
-          <p>
+          <p data-i18n="about.p1">
             I'm a full-stack software developer based in Chambly, Québec, with 5 years of professional
             experience building web applications across a wide range of stacks and industries. I hold a
             Bachelor in Computer Science and Software Engineering from UQAM.
           </p>
-          <p>
+          <p data-i18n="about.p2">
             I have a strong grasp of OOP and functional programming paradigms, and I genuinely enjoy
             applying the right design patterns to keep codebases clean and maintainable. I've worked
             with teams in fast-paced environments — doing code reviews, collaborating with product owners,
             and shipping features end-to-end from database to UI.
           </p>
-          <p>
+          <p data-i18n="about.p3">
             I'm a fast learner with a passion for exploring new languages and technologies — from Elixir
             and Rust to Haskell and Clojure. Always curious, always building.
           </p>
@@ -77,19 +86,19 @@
         <div class="about-stats reveal">
           <div class="stat-card">
             <span class="stat-number">5+</span>
-            <span class="stat-label">Years of experience</span>
+            <span class="stat-label" data-i18n="about.stats.years">Years of experience</span>
           </div>
           <div class="stat-card">
             <span class="stat-number">4</span>
-            <span class="stat-label">Companies worked at</span>
+            <span class="stat-label" data-i18n="about.stats.companies">Companies worked at</span>
           </div>
           <div class="stat-card">
             <span class="stat-number">15+</span>
-            <span class="stat-label">Technologies used</span>
+            <span class="stat-label" data-i18n="about.stats.tech">Technologies used</span>
           </div>
           <div class="stat-card">
             <span class="stat-number">∞</span>
-            <span class="stat-label">Bugs squashed</span>
+            <span class="stat-label" data-i18n="about.stats.bugs">Bugs squashed</span>
           </div>
         </div>
       </div>
@@ -100,12 +109,12 @@
   <section id="skills" class="section section-alt">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">02. Skills</span>
-        <h2 class="section-title">What I work with</h2>
+        <span class="section-label" data-i18n="skills.label">02. Skills</span>
+        <h2 class="section-title" data-i18n="skills.title">What I work with</h2>
       </div>
       <div class="skills-grid">
         <div class="skill-group reveal">
-          <h3 class="skill-group-title">Languages</h3>
+          <h3 class="skill-group-title" data-i18n="skills.groups.languages">Languages</h3>
           <ul class="skill-list">
             <li class="skill-tag">JavaScript</li>
             <li class="skill-tag">TypeScript</li>
@@ -122,7 +131,7 @@
           </ul>
         </div>
         <div class="skill-group reveal">
-          <h3 class="skill-group-title">Frameworks</h3>
+          <h3 class="skill-group-title" data-i18n="skills.groups.frameworks">Frameworks</h3>
           <ul class="skill-list">
             <li class="skill-tag">React</li>
             <li class="skill-tag">Angular</li>
@@ -136,7 +145,7 @@
           </ul>
         </div>
         <div class="skill-group reveal">
-          <h3 class="skill-group-title">Databases</h3>
+          <h3 class="skill-group-title" data-i18n="skills.groups.databases">Databases</h3>
           <ul class="skill-list">
             <li class="skill-tag">PostgreSQL</li>
             <li class="skill-tag">MS SQL Server</li>
@@ -144,7 +153,7 @@
           </ul>
         </div>
         <div class="skill-group reveal">
-          <h3 class="skill-group-title">Tools &amp; Cloud</h3>
+          <h3 class="skill-group-title" data-i18n="skills.groups.tools">Tools &amp; Cloud</h3>
           <ul class="skill-list">
             <li class="skill-tag">AWS</li>
             <li class="skill-tag">Docker</li>
@@ -165,8 +174,8 @@
   <section id="projects" class="section">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">03. Experience</span>
-        <h2 class="section-title">Where I've worked</h2>
+        <span class="section-label" data-i18n="experience.label">03. Experience</span>
+        <h2 class="section-title" data-i18n="experience.title">Where I've worked</h2>
       </div>
       <div class="projects-grid">
 
@@ -176,12 +185,12 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
             </div>
             <div class="project-links">
-              <span class="project-period">Dec 2022 – Present</span>
+              <span class="project-period" data-i18n="experience.modellium.period">Dec 2022 – Present</span>
             </div>
           </div>
-          <h3 class="project-title">Software Developer</h3>
-          <p class="project-company">Modellium &mdash; Québec</p>
-          <p class="project-description">
+          <h3 class="project-title" data-i18n="experience.modellium.role">Software Developer</h3>
+          <p class="project-company" data-i18n="experience.modellium.company">Modellium — Québec</p>
+          <p class="project-description" data-i18n="experience.modellium.description">
             Develop and optimize SQL queries for peak database performance. Implement new features,
             detect and fix bugs, respond to client requirements, and participate in production deployments.
           </p>
@@ -196,12 +205,12 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
             </div>
             <div class="project-links">
-              <span class="project-period">Apr 2022 – Oct 2022</span>
+              <span class="project-period" data-i18n="experience.mirego.period">Apr 2022 – Oct 2022</span>
             </div>
           </div>
-          <h3 class="project-title">Software Developer</h3>
-          <p class="project-company">Mirego &mdash; Montréal</p>
-          <p class="project-description">
+          <h3 class="project-title" data-i18n="experience.mirego.role">Software Developer</h3>
+          <p class="project-company" data-i18n="experience.mirego.company">Mirego — Montréal</p>
+          <p class="project-description" data-i18n="experience.mirego.description">
             Stored and synced data from external APIs, exposed data to mobile apps via a GraphQL API.
             Conducted code reviews, unit tests, and database modeling. Evaluated and defined tasks
             with the Product Owner.
@@ -217,12 +226,12 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
             </div>
             <div class="project-links">
-              <span class="project-period">Jun 2019 – Apr 2022</span>
+              <span class="project-period" data-i18n="experience.uqam.period">Jun 2019 – Apr 2022</span>
             </div>
           </div>
-          <h3 class="project-title">IT Analyst / Junior IT Analyst Intern</h3>
-          <p class="project-company">UQAM &mdash; Montréal</p>
-          <p class="project-description">
+          <h3 class="project-title" data-i18n="experience.uqam.role">IT Analyst / Junior IT Analyst Intern</h3>
+          <p class="project-company" data-i18n="experience.uqam.company">UQAM — Montréal</p>
+          <p class="project-description" data-i18n="experience.uqam.description">
             Developed REST APIs in Node.js and UIs with Angular and React following SOLID principles.
             Conducted code reviews, validation, and requirements verification. Presented features to
             stakeholders and wrote integration and unit tests.
@@ -238,12 +247,12 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
             </div>
             <div class="project-links">
-              <span class="project-period">Apr 2018 – Dec 2018</span>
+              <span class="project-period" data-i18n="experience.statscan.period">Apr 2018 – Dec 2018</span>
             </div>
           </div>
-          <h3 class="project-title">Java Developer Intern</h3>
-          <p class="project-company">Statistics Canada &mdash; Ottawa</p>
-          <p class="project-description">
+          <h3 class="project-title" data-i18n="experience.statscan.role">Java Developer Intern</h3>
+          <p class="project-company" data-i18n="experience.statscan.company">Statistics Canada — Ottawa</p>
+          <p class="project-description" data-i18n="experience.statscan.description">
             Programmed new features in Java, interpreted analyst specifications, and participated
             in planning and prioritization meetings.
           </p>
@@ -260,12 +269,12 @@
   <section id="contact" class="section section-alt">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">04. Contact</span>
-        <h2 class="section-title">Get in touch</h2>
+        <span class="section-label" data-i18n="contact.label">04. Contact</span>
+        <h2 class="section-title" data-i18n="contact.title">Get in touch</h2>
       </div>
       <div class="contact-grid">
         <div class="contact-text reveal">
-          <p>
+          <p data-i18n="contact.text">
             Whether you have a project in mind, a role to fill, or just want to talk
             about interesting engineering problems — my inbox is open.
           </p>
@@ -286,18 +295,18 @@
         </div>
         <form class="contact-form reveal" id="contact-form" novalidate>
           <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required />
+            <label for="name" data-i18n="contact.form.nameLabel">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" data-i18n-placeholder="contact.form.namePlaceholder" required />
           </div>
           <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            <label for="email" data-i18n="contact.form.emailLabel">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" data-i18n-placeholder="contact.form.emailPlaceholder" required />
           </div>
           <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+            <label for="message" data-i18n="contact.form.messageLabel">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" data-i18n-placeholder="contact.form.messagePlaceholder" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <button type="submit" class="btn btn-primary btn-full" data-i18n="contact.form.submit">Send Message</button>
           <p class="form-status" id="form-status" aria-live="polite"></p>
         </form>
       </div>
@@ -307,7 +316,7 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>Designed &amp; built by <strong>Vincent Legros</strong> &mdash; <span id="footer-year"></span></p>
+      <p><span data-i18n="footer.prefix">Designed &amp; built by</span> <strong>Vincent Legros</strong> &mdash; <span id="footer-year"></span></p>
     </div>
   </footer>
 
