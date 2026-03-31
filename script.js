@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    pageTitle: 'Vincent Legros — Software Engineer',
+    pageTitle: 'Vincent Legros — Software Developer',
     langToggleLabel: 'Passer en français',
     langToggleShort: 'FR',
     nav: {
@@ -11,7 +11,7 @@ const translations = {
     },
     hero: {
       greeting: "Hi, I'm",
-      title: 'Full-Stack Software Engineer',
+      title: 'Full-Stack Software Developer',
       bio: 'Full-stack developer with 5+ years of experience building robust web applications. Bachelor in Computer Science from UQAM. Passionate about clean code, design patterns, and learning new technologies.',
       ctaWork: 'View My Work',
       ctaContact: 'Get In Touch',
@@ -91,7 +91,7 @@ const translations = {
     }
   },
   fr: {
-    pageTitle: 'Vincent Legros — Ingénieur logiciel',
+    pageTitle: 'Vincent Legros — Développeur logiciel',
     langToggleLabel: 'Switch to English',
     langToggleShort: 'EN',
     nav: {
@@ -102,7 +102,7 @@ const translations = {
     },
     hero: {
       greeting: 'Bonjour, moi c’est',
-      title: 'Ingénieur logiciel full-stack',
+      title: 'Développeur logiciel full-stack',
       bio: 'Développeur full-stack avec plus de 5 ans d’expérience dans la création d’applications web robustes. Baccalauréat en informatique à l’UQAM. Passionné par le code propre, les design patterns et l’apprentissage de nouvelles technologies.',
       ctaWork: 'Voir mes projets',
       ctaContact: 'Me contacter',
