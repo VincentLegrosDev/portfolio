@@ -8,17 +8,17 @@
 }
 
 :root {
-  --bg:          #0d1117;
-  --bg-alt:      #111827;
-  --surface:     #1a2233;
-  --surface-2:   #1e2a3a;
-  --border:      #243044;
-  --accent:      #2dd4bf;    /* teal */
-  --accent-dim:  #14b8a6;
-  --accent-glow: rgba(45, 212, 191, 0.15);
-  --text:        #e2e8f0;
-  --text-muted:  #8b99b3;
-  --text-faint:  #4a5568;
+  --bg:          #05070c;
+  --bg-alt:      #0a0f18;
+  --surface:     #111827;
+  --surface-2:   #172033;
+  --border:      #22314a;
+  --accent:      #4f7cff;
+  --accent-dim:  #3b68f5;
+  --accent-glow: rgba(79, 124, 255, 0.14);
+  --text:        #f6f8fc;
+  --text-muted:  #c0c9d8;
+  --text-faint:  #78859a;
   --font-sans:   'Inter', system-ui, sans-serif;
   --font-mono:   'Fira Code', 'Cascadia Code', monospace;
   --radius:      8px;
