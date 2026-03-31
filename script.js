@@ -184,8 +184,25 @@ const translations = {
 };
 
 const STORAGE_KEY = 'portfolio-language';
+
+function getStoredLanguage() {
+  try {
+    return window.localStorage.getItem(STORAGE_KEY);
+  } catch {
+    return null;
+  }
+}
+
+function setStoredLanguage(language) {
+  try {
+    window.localStorage.setItem(STORAGE_KEY, language);
+  } catch {
+    // Ignore storage errors and keep language only in memory.
+  }
+}
+
 const defaultLanguage = document.documentElement.lang?.startsWith('fr') ? 'fr' : 'en';
-let currentLanguage = localStorage.getItem(STORAGE_KEY) || defaultLanguage;
+let currentLanguage = getStoredLanguage() || defaultLanguage;
 
 /* ============================================================
    NAVIGATION — scroll state & active link highlighting
@@ -219,7 +236,9 @@ navList.addEventListener('click', (e) => {
 });
 
 if (langToggle) {
-  langToggle.addEventListener('click', () => {
+  langToggle.addEventListener('click', (event) => {
+    event.preventDefault();
+    event.stopPropagation();
     const nextLanguage = currentLanguage === 'en' ? 'fr' : 'en';
     applyLanguage(nextLanguage);
   });
@@ -277,7 +296,7 @@ function applyLanguage(language) {
     langToggle.setAttribute('aria-pressed', String(language === 'fr'));
   }
 
-  localStorage.setItem(STORAGE_KEY, language);
+  setStoredLanguage(language);
 }
 
 /* ============================================================
